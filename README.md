@@ -14,7 +14,7 @@ These samples were developed and tested using Visual Studio 2019 Pro on Windows 
 ----
 ## Samples
 1.  Urho-Boxes: Renders a simple blue box over the top of detected image targets.
-![Urho-Boxes Example](docs/urho-boxes.gif)
+![Urho-Boxes Example](doc/urho-boxes.gif)
 
 ----
 ## TODO:
