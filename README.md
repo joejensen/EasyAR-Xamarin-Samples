@@ -6,7 +6,7 @@ Provides examples of using the EasyAR - Xamarin Binding Library available [here]
 
 ----
 ## Usage
-These samples were developed and tested using Visual Studio 2019 Pro on Windows with a remote Mac-Mini build server, I can't guarentee they'll work elsewhere.  
+These samples were developed and tested using Visual Studio 2019 Pro on Windows with a remote Mac-Mini build server, and tested with a Pixel 2 and iPad Pro, I can't guarentee they'll work elsewhere.
 
 1. Update the license key in EasyARX-Samples\EasyARX-Samples\EasyARUtil.cs by following the [instructions from EasyAR](https://help.easyar.com/EasyAR%20Sense/v3/Getting%20Started/Getting-Started-with-EasyAR.html).
 2. Run the project for the appropriate device.
