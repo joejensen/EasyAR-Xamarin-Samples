@@ -141,7 +141,7 @@ namespace EasyARX
             i2FAdapter = InputFrameToFeedbackFrameAdapter.create();
             outputFrameFork = OutputFrameFork.create(2);
 
-            bool status = camera.openWithType(CameraDeviceType.Default);
+            bool status = camera.openWithPreferredType(CameraDeviceType.Back);
             camera.setSize(new Vec2I(1280, 720));
             camera.setFocusMode(CameraDeviceFocusMode.Continousauto);
             camera.setBufferCapacity(5 + 7);
@@ -258,13 +258,11 @@ namespace EasyARX
                         }
 
                         // Remove any targets that can no longer be located
-                        int currentNodeCount = targetIndex;
-                        while(targetNodes.Count > currentNodeCount)
+                        while(targetNodes.Count > targetIndex)
                         {
                             Node node = targetNodes[targetIndex];
                             targetNodes.RemoveAt(targetIndex);
                             node.Remove();
-                            targetIndex++;
                         }
                     }
                     unTypedResult.Some.Dispose();
