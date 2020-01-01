@@ -110,8 +110,8 @@ namespace EasyARX
 
                         if (iframe.index() != previousInputFrameIndex)
                         {
-                            Matrix44F ip = cameraParameters.imageProjection(aspectRatio, rotation, true, true);
-                            Matrix4 iprj = EasyARUtil.ConvertEasyArToUrho(ip);
+                            Matrix44F ip = cameraParameters.imageProjection(aspectRatio, rotation, true, false);
+                            Matrix4 iprj = ip.ToUrhoMatrix();
                             bgCamera.SetProjection(iprj);
                             EasyAR.Buffer buffer = image.buffer();
                             try

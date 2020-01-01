@@ -236,13 +236,13 @@ namespace EasyARX
                                         List<Image> images = imageTarget.images();
                                         Image targetImage = images[0];
 
-                                        Matrix4 prj = EasyARUtil.ConvertEasyArToUrho(sp);
+                                        Matrix4 prj = sp.ToUrhoMatrix();
                                         prj.M34 /= 2f;
                                         prj.M33 = far / (far - near);
                                         prj.M43 *= -1;
                                         fgCamera.SetProjection(prj);
 
-                                        Matrix4 convertedPoseMatrix = EasyARUtil.ConvertEasyArToUrho(targetInstance.pose());
+                                        Matrix4 convertedPoseMatrix = targetInstance.pose().ToUrhoMatrix();
                                         Vector3 scale = new Vector3(imageTarget.scale(), imageTarget.scale() * targetImage.height() / targetImage.width(), 1);
                                         UpdateArScene( targetIndex, convertedPoseMatrix, scale);
                                         foreach (Image targetImageToRelease in images)

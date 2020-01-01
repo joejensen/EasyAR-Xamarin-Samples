@@ -18,9 +18,8 @@ These samples were developed and tested using Visual Studio 2019 Pro on Windows 
 
 ----
 ## TODO:
-1.  At the moment the samples only work in the devices natural / portrait orientation.  The background(orthogonal) projection matrices need to be modified to account for other orientations.
-2.  Provide documentation on how all the pieces fit together.
-3.  *Update Xamarin-Essential to 1.4.0 when released*.  Currently Xamarin-Essential for Android has a [critical bug causing a memory leak](https://github.com/xamarin/Essentials/issues/917) that will crash the examples after a few minutes.  This has already been fixed for Xamarin-Essentials 1.4.0 but not yet released to nuget.
+1.  Provide documentation on how all the pieces fit together.
+2.  *Update Xamarin-Essential to 1.4.0 when released*.  Currently Xamarin-Essential for Android has a [critical bug causing a memory leak](https://github.com/xamarin/Essentials/issues/917) that will crash the examples after a few minutes.  This has already been fixed for Xamarin-Essentials 1.4.0 but not yet released to nuget.
 
 ----
 ## License
